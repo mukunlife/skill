@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "有 10900 个基因在所有样本中均为 0，将保留但标记为零方差"
+  ],
+  "group_a": "Normal",
+  "group_b": "Tumor",
+  "all_groups": [
+    "Normal",
+    "Tumor"
+  ],
+  "samples_per_group": {
+    "Normal": [
+      "TCGA-A3-3358-11A",
+      "TCGA-A3-3387-11A",
+      "TCGA-B0-4700-11A",
+      "TCGA-B0-4712-11A",
+      "TCGA-B0-5402-11A",
+      "TCGA-B0-5690-11A",
+      "TCGA-B0-5691-11A",
+      "TCGA-B0-5694-11A",
+      "TCGA-B0-5696-11A",
+      "TCGA-B0-5697-11A"
+    ],
+    "Tumor": [
+      "TCGA-A3-3358-01A",
+      "TCGA-A3-3387-01A",
+      "TCGA-B0-4700-01A",
+      "TCGA-B0-4712-01A",
+      "TCGA-B0-5402-01A",
+      "TCGA-B0-5690-01A",
+      "TCGA-B0-5691-01A",
+      "TCGA-B0-5694-01A",
+      "TCGA-B0-5696-01A",
+      "TCGA-B0-5697-01A"
+    ]
+  },
+  "n_matrix_samples": 20,
+  "n_group_samples": 20,
+  "matrix_only_samples": [],
+  "groups_only_samples": [],
+  "zero_genes": 10900
+}

@@ -1,0 +1,25 @@
+{
+  "skill": "de-analysis",
+  "created_at": "2026-10-27T18:49:07",
+  "expression": "TCGA-KIRC/gene_counts.tsv",
+  "groups": "TCGA-KIRC/groups.csv",
+  "group_a": "Normal",
+  "group_b": "Tumor",
+  "data_type": "counts",
+  "data_type_reason": "非负整数且最大值 > 20，自动判为原始 counts",
+  "transform": "CPM 归一化后取 log2(x + 1)",
+  "test": "welch",
+  "log2fc_threshold": 1.0,
+  "padj_threshold": 0.05,
+  "n_genes": 60660,
+  "n_significant": 3442,
+  "n_up": 1851,
+  "n_down": 1591,
+  "nan_pvalue_count": 10900,
+  "zero_variance_genes": 10900,
+  "library_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  }
+}

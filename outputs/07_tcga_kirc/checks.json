@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "必需文件齐全",
+      "passed": true,
+      "detail": "缺失：[]"
+    },
+    {
+      "check": "基因数量与输入一致",
+      "passed": true,
+      "detail": "输入 60660，结果 60660"
+    },
+    {
+      "check": "基因 ID 与输入一致",
+      "passed": true,
+      "detail": "按 gene_id 集合比较"
+    },
+    {
+      "check": "结果字段完整",
+      "passed": true,
+      "detail": "缺少：[]"
+    },
+    {
+      "check": "关键数值无缺失/无穷",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P 值与 padj 在 [0,1]",
+      "passed": true,
+      "detail": "pvalue 范围 1.91e-16~1；padj 范围 1.16e-11~1"
+    },
+    {
+      "check": "log2FoldChange 可复算",
+      "passed": true,
+      "detail": "最大偏差 0.00e+00"
+    },
+    {
+      "check": "pvalue 可复算",
+      "passed": true,
+      "detail": "最大偏差 0.00e+00"
+    },
+    {
+      "check": "padj 可复算",
+      "passed": true,
+      "detail": "最大偏差 0.00e+00"
+    },
+    {
+      "check": "显著标记与阈值一致",
+      "passed": true,
+      "detail": "阈值：|log2FC|>=1.0，padj<0.05"
+    },
+    {
+      "check": "显著基因表与结果表一致",
+      "passed": true,
+      "detail": "显著表 3442 行，结果表标记 3442 行"
+    },
+    {
+      "check": "说明包含比较方向",
+      "passed": true,
+      "detail": "Normal -> Tumor"
+    },
+    {
+      "check": "火山图非空",
+      "passed": true,
+      "detail": "138076 bytes"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     {
       "check": "SKILL.md 存在",
       "passed": true,
-      "detail": "C:\\Users\\21336\\2024187025-牛晨杰-智能体实践实验一\\.claude\\skills\\medical-dialogue\\SKILL.md"
+      "detail": ".claude\\skills\\medical-dialogue\\SKILL.md"
     },
     {
       "check": "YAML frontmatter 格式正确",

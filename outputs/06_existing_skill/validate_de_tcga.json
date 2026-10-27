@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "passed_count": 20,
+  "failed_count": 0,
+  "checks": [
+    {
+      "check": "SKILL.md 存在",
+      "passed": true,
+      "detail": ".claude\\skills\\de-analysis\\SKILL.md"
+    },
+    {
+      "check": "YAML frontmatter 格式正确",
+      "passed": true,
+      "detail": "以 --- 开头并闭合"
+    },
+    {
+      "check": "frontmatter 可解析",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "name 存在且为 kebab-case",
+      "passed": true,
+      "detail": "de-analysis"
+    },
+    {
+      "check": "name 与目录名一致",
+      "passed": true,
+      "detail": "name='de-analysis', dir='de-analysis'"
+    },
+    {
+      "check": "description 长度 1~1024 且无尖括号",
+      "passed": true,
+      "detail": "134 字符"
+    },
+    {
+      "check": "references/index.md 存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "至少有一个深层参考文档",
+      "passed": true,
+      "detail": "2 个"
+    },
+    {
+      "check": "index.md 指向全部深层参考",
+      "passed": true,
+      "detail": "未链接：[]"
+    },
+    {
+      "check": "SKILL.md 指向 references/index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "scripts/ 至少有一个脚本",
+      "passed": true,
+      "detail": "5 个"
+    },
+    {
+      "check": "存在独立核验脚本（checks.py）",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 说明了脚本调用方法",
+      "passed": true,
+      "detail": "提到：['checks.py', 'data_io.py', 'make_demo_data.py', 'run.py', 'stats_utils.py']"
+    },
+    {
+      "check": "examples/ 含示例输入",
+      "passed": true,
+      "detail": "3 个"
+    },
+    {
+      "check": "SKILL.md 说明输入与输出",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 含执行流程",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 说明结果核验",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "未写入疑似 API 密钥",
+      "passed": true,
+      "detail": "命中：[]"
+    },
+    {
+      "check": "未写入本机绝对路径",
+      "passed": true,
+      "detail": "命中：[]"
+    },
+    {
+      "check": "运行目录的 checks.json 通过",
+      "passed": true,
+      "detail": "passed=True"
+    }
+  ]
+}
