@@ -22,6 +22,7 @@ HEADING_RE = re.compile(r"^(#{1,4})\s+(.*)$")
 BULLET_RE = re.compile(r"^\s*[-*]\s+(.*)$")
 NUMBER_RE = re.compile(r"^\s*\d+\.\s+(.*)$")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+IMAGE_RE = re.compile(r"^!\[([^\]]*)\]\(([^)]+)\)$")
 
 
 def set_run_font(run, ascii_font: str = "Calibri", east: str = "宋体", size=None) -> None:
@@ -109,6 +110,32 @@ def add_table(doc: Document, raw_lines: list[str]) -> None:
     doc.add_paragraph()
 
 
+def add_image(doc: Document, caption: str, rel_path: str, number: int) -> int:
+    """插入图片并加“图 N”题注；路径相对 docs/ 解析。"""
+    path = (SOURCE.parent / rel_path).resolve()
+    if not path.exists():
+        paragraph = doc.add_paragraph()
+        run = paragraph.add_run(f"[图片缺失] {rel_path}")
+        set_run_font(run, size=9)
+        run.font.color.rgb = RGBColor(0xC0, 0x00, 0x00)
+        return number
+
+    paragraph = doc.add_paragraph()
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph.paragraph_format.space_before = Pt(6)
+    paragraph.paragraph_format.space_after = Pt(2)
+    paragraph.add_run().add_picture(str(path), width=Cm(15.5))
+
+    number += 1
+    caption_paragraph = doc.add_paragraph()
+    caption_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    caption_paragraph.paragraph_format.space_after = Pt(8)
+    run = caption_paragraph.add_run(f"图 {number}  {caption}")
+    set_run_font(run, size=9)
+    run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+    return number
+
+
 def main() -> None:
     lines = SOURCE.read_text(encoding="utf-8").splitlines()
     doc = Document()
@@ -128,6 +155,7 @@ def main() -> None:
     normal.paragraph_format.line_spacing = 1.25
     normal.paragraph_format.space_after = Pt(4)
 
+    image_no = 0
     index = 0
     while index < len(lines):
         line = lines[index]
@@ -148,6 +176,12 @@ def main() -> None:
                 table_lines.append(lines[index])
                 index += 1
             add_table(doc, table_lines)
+            continue
+
+        image = IMAGE_RE.match(line.strip())
+        if image:
+            image_no = add_image(doc, image.group(1), image.group(2), image_no)
+            index += 1
             continue
 
         heading = HEADING_RE.match(line)
