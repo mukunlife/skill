@@ -14,9 +14,3 @@
 - 改造过的现有 Skill `skill-creator` 只保留在 `.claude/skills/`，因为提交清单只要求
   “两个自建专业 Skill”；它的来源与改动见
   `outputs/06_existing_skill/modification_record.md`。
-
-## 未参与提交的上游候选 Skill
-
-`scientific-critical-thinking/` 和 `scientific-writing/` 是下载评估过的第三方 Skill
-（K-Dense Inc.，MIT），没有修改，也没有在实验记录中使用，**不属于本次两个自建 Skill**。
-提交前建议删除这两个目录，避免与 `de-analysis`、`medical-dialogue` 混淆。

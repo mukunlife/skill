@@ -14,6 +14,7 @@
 | `07_de_checks.png` | TCGA-KIRC 真实数据 `checks.py`：13 项全部通过 |
 | `08_dialogue_checks.png` | `medical-dialogue` `checks.py`：7 项全部通过 |
 | `09_skill_list.png` | 新会话 Skill 列表：`de-analysis`、`medical-dialogue`、`skill-creator` |
+| `10_github_repo.png` | GitHub Public 仓库页面：`mukunlife/skill`，`main` 分支 |
 | `11_existing_skill_before_after.png` | 改造前 GBK 崩溃 vs 改造后 `Skill is valid!` |
 | `12_zip_and_tree.png` | 提交 ZIP 与项目根目录 |
 
@@ -23,7 +24,6 @@
 |---|---|
 | `02_vscode_connected.png` | VS Code 扩展面板内的成功响应（若教师要求扩展面板而非 CLI） |
 | `06_webchat_compare.png` | 网页 Chat 对“创建实验记录.txt 并读取”的实际回复 |
-| `10_github_repo.png` | 推送成功后的 GitHub 仓库首页 |
 
 ## 注意
 
