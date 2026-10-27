@@ -1,0 +1,37 @@
+{
+  "ok": false,
+  "errors": [
+    "分组表中的样本在表达矩阵中缺失：['Control_X']",
+    "表达矩阵中的样本在分组表中缺失：['Control_3']"
+  ],
+  "warnings": [
+    "有 5 个基因在所有样本中均为 0，将保留但标记为零方差"
+  ],
+  "group_a": "control",
+  "group_b": "treat",
+  "all_groups": [
+    "control",
+    "treat"
+  ],
+  "samples_per_group": {
+    "control": [
+      "Control_1",
+      "Control_2",
+      "Control_X"
+    ],
+    "treat": [
+      "Treat_1",
+      "Treat_2",
+      "Treat_3"
+    ]
+  },
+  "n_matrix_samples": 6,
+  "n_group_samples": 6,
+  "matrix_only_samples": [
+    "Control_3"
+  ],
+  "groups_only_samples": [
+    "Control_X"
+  ],
+  "zero_genes": 5
+}

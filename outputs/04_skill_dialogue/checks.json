@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "必需文件齐全",
+      "passed": true,
+      "detail": "缺失：[]"
+    },
+    {
+      "check": "统计数字与实际一致",
+      "passed": true,
+      "detail": "turns=17, pairs=7, unmatched=1, notes=1, others=1, parse_errors=1, empty=1"
+    },
+    {
+      "check": "每个问答对均为患者问、医生答",
+      "passed": true,
+      "detail": "问答对 7 个"
+    },
+    {
+      "check": "输出逐字来自原文",
+      "passed": true,
+      "detail": "全部输出均为原文片段"
+    },
+    {
+      "check": "全部发言被且仅被覆盖一次",
+      "passed": true,
+      "detail": "原文发言片段 18，输出覆盖 18，去重后 18"
+    },
+    {
+      "check": "qa.md 统计与 qa.json 一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "qa.md 声明逐字整理",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

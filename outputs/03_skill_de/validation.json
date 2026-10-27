@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "有 5 个基因在所有样本中均为 0，将保留但标记为零方差"
+  ],
+  "group_a": "control",
+  "group_b": "treat",
+  "all_groups": [
+    "control",
+    "treat"
+  ],
+  "samples_per_group": {
+    "control": [
+      "Control_1",
+      "Control_2",
+      "Control_3"
+    ],
+    "treat": [
+      "Treat_1",
+      "Treat_2",
+      "Treat_3"
+    ]
+  },
+  "n_matrix_samples": 6,
+  "n_group_samples": 6,
+  "matrix_only_samples": [],
+  "groups_only_samples": [],
+  "zero_genes": 5
+}

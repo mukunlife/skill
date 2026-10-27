@@ -1,0 +1,12 @@
+{
+  "base_url": "https://api.deepseek.com/anthropic",
+  "model_configured": "deepseek-flash[1M]",
+  "auth_token": "REDACTED",
+  "request_path": "/v1/messages",
+  "http_status": 200,
+  "server_header": "openresty",
+  "response_model": "deepseek-flash[1M]",
+  "content": [
+    ""
+  ]
+}

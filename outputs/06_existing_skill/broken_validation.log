@@ -1,0 +1,19 @@
+﻿[PASS] SKILL.md 存在 — C:\Users\21336\AppData\Local\Temp\broken-skill-demo\SKILL.md
+[PASS] YAML frontmatter 格式正确 — 以 --- 开头并闭合
+[PASS] frontmatter 可解析
+[PASS] name 存在且为 kebab-case — broken-skill
+[FAIL] name 与目录名一致 — name='broken-skill', dir='broken-skill-demo'
+[PASS] description 长度 1~1024 且无尖括号 — 20 字符
+[FAIL] references/index.md 存在
+[FAIL] 至少有一个深层参考文档 — 0 个
+[PASS] scripts/ 至少有一个脚本 — 1 个
+[FAIL] 存在独立核验脚本（checks.py）
+[FAIL] SKILL.md 说明了脚本调用方法 — 提到：[]
+[FAIL] examples/ 含示例输入 — 0 个
+[FAIL] SKILL.md 说明输入与输出
+[FAIL] SKILL.md 含执行流程
+[FAIL] SKILL.md 说明结果核验
+[FAIL] 未写入疑似 API 密钥 — 命中：['scripts\\run.py:1']
+[FAIL] 未写入本机绝对路径 — 命中：['scripts\\run.py:2']
+
+结果：6 项通过，11 项失败

@@ -1,0 +1,25 @@
+{
+  "skill": "de-analysis",
+  "created_at": "2026-10-27T18:14:05",
+  "expression": ".\\.claude\\skills\\de-analysis\\examples\\expression_demo.csv",
+  "groups": ".\\.claude\\skills\\de-analysis\\examples\\groups_demo.csv",
+  "group_a": "control",
+  "group_b": "treat",
+  "data_type": "counts",
+  "data_type_reason": "非负整数且最大值 > 20，自动判为原始 counts",
+  "transform": "CPM 归一化后取 log2(x + 1)",
+  "test": "welch",
+  "log2fc_threshold": 1.0,
+  "padj_threshold": 0.05,
+  "n_genes": 300,
+  "n_significant": 20,
+  "n_up": 5,
+  "n_down": 15,
+  "nan_pvalue_count": 5,
+  "zero_variance_genes": 5,
+  "library_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  }
+}

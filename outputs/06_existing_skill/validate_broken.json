@@ -1,0 +1,92 @@
+{
+  "passed": false,
+  "passed_count": 6,
+  "failed_count": 11,
+  "checks": [
+    {
+      "check": "SKILL.md 存在",
+      "passed": true,
+      "detail": "C:\\Users\\21336\\AppData\\Local\\Temp\\broken-skill-demo\\SKILL.md"
+    },
+    {
+      "check": "YAML frontmatter 格式正确",
+      "passed": true,
+      "detail": "以 --- 开头并闭合"
+    },
+    {
+      "check": "frontmatter 可解析",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "name 存在且为 kebab-case",
+      "passed": true,
+      "detail": "broken-skill"
+    },
+    {
+      "check": "name 与目录名一致",
+      "passed": false,
+      "detail": "name='broken-skill', dir='broken-skill-demo'"
+    },
+    {
+      "check": "description 长度 1~1024 且无尖括号",
+      "passed": true,
+      "detail": "20 字符"
+    },
+    {
+      "check": "references/index.md 存在",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "至少有一个深层参考文档",
+      "passed": false,
+      "detail": "0 个"
+    },
+    {
+      "check": "scripts/ 至少有一个脚本",
+      "passed": true,
+      "detail": "1 个"
+    },
+    {
+      "check": "存在独立核验脚本（checks.py）",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 说明了脚本调用方法",
+      "passed": false,
+      "detail": "提到：[]"
+    },
+    {
+      "check": "examples/ 含示例输入",
+      "passed": false,
+      "detail": "0 个"
+    },
+    {
+      "check": "SKILL.md 说明输入与输出",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 含执行流程",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "SKILL.md 说明结果核验",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "未写入疑似 API 密钥",
+      "passed": false,
+      "detail": "命中：['scripts\\\\run.py:1']"
+    },
+    {
+      "check": "未写入本机绝对路径",
+      "passed": false,
+      "detail": "命中：['scripts\\\\run.py:2']"
+    }
+  ]
+}

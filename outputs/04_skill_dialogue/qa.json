@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "门诊高血压复诊对话（示例）",
+    "source": ".\\.claude\\skills\\medical-dialogue\\examples\\sample_dialogue.txt",
+    "source_name": "sample_dialogue.txt",
+    "generated_at": "2026-10-27T18:14:07",
+    "total_lines": 20,
+    "turns": 17,
+    "source_turns": 18,
+    "pairs": 7,
+    "unmatched": 1,
+    "doctor_notes": 1,
+    "other_turns": 1,
+    "parse_errors": 1,
+    "empty_content": 1,
+    "parse_options": {
+      "doctor_labels": [],
+      "patient_labels": []
+    }
+  },
+  "pairs": [
+    {
+      "pair_id": 1,
+      "question": {
+        "turn_id": 3,
+        "line_no": "4-5",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "医生您好，我最近一周总觉得头晕，早上起来比较明显。 有时候还会觉得脖子发紧。",
+        "source_turn_ids": [
+          3,
+          4
+        ]
+      },
+      "answer": {
+        "turn_id": 5,
+        "line_no": "6",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "头晕的时候有没有恶心想吐，或者看东西转？",
+        "source_turn_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "pair_id": 2,
+      "question": {
+        "turn_id": 6,
+        "line_no": "7",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "没有吐，也没有看东西转，就是昏昏沉沉的。",
+        "source_turn_ids": [
+          6
+        ]
+      },
+      "answer": {
+        "turn_id": 7,
+        "line_no": "8",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "最近量过血压吗？",
+        "source_turn_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "pair_id": 3,
+      "question": {
+        "turn_id": 8,
+        "line_no": "9",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "前天在社区量了，说是150/95。",
+        "source_turn_ids": [
+          8
+        ]
+      },
+      "answer": {
+        "turn_id": 9,
+        "line_no": "10",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "平时吃降压药吗？",
+        "source_turn_ids": [
+          9
+        ]
+      }
+    },
+    {
+      "pair_id": 4,
+      "question": {
+        "turn_id": 10,
+        "line_no": "11",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "原来吃过氨氯地平，后来觉得好了就停了。",
+        "source_turn_ids": [
+          10
+        ]
+      },
+      "answer": {
+        "turn_id": 11,
+        "line_no": "12",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "停药多久了？",
+        "source_turn_ids": [
+          11
+        ]
+      }
+    },
+    {
+      "pair_id": 5,
+      "question": {
+        "turn_id": 12,
+        "line_no": "13",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "大概两个月。",
+        "source_turn_ids": [
+          12
+        ]
+      },
+      "answer": {
+        "turn_id": 13,
+        "line_no": "14",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "有没有胸痛、心慌、看东西模糊？",
+        "source_turn_ids": [
+          13
+        ]
+      }
+    },
+    {
+      "pair_id": 6,
+      "question": {
+        "turn_id": 14,
+        "line_no": "15",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "没有胸痛，心慌偶尔有，看东西不模糊。",
+        "source_turn_ids": [
+          14
+        ]
+      },
+      "answer": {
+        "turn_id": 15,
+        "line_no": "16",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "好的。今天先测个血压，再做个心电图。降压药不能自己停，先恢复氨氯地平，每天早上一片，一周后回来复诊。",
+        "source_turn_ids": [
+          15
+        ]
+      }
+    },
+    {
+      "pair_id": 7,
+      "question": {
+        "turn_id": 16,
+        "line_no": "17",
+        "speaker": "患者",
+        "role": "patient",
+        "text": "好的，谢谢医生。",
+        "source_turn_ids": [
+          16
+        ]
+      },
+      "answer": {
+        "turn_id": 17,
+        "line_no": "18",
+        "speaker": "医生",
+        "role": "doctor",
+        "text": "如果出现胸痛或者头晕加重，随时来医院。",
+        "source_turn_ids": [
+          17
+        ]
+      }
+    }
+  ],
+  "unmatched_patient": [
+    {
+      "turn_id": 18,
+      "line_no": "19",
+      "speaker": "患者",
+      "role": "patient",
+      "text": "那我先去做检查了。",
+      "source_turn_ids": [
+        18
+      ],
+      "reason": "缺少医生回应"
+    }
+  ],
+  "doctor_notes": [
+    {
+      "turn_id": 2,
+      "line_no": "3",
+      "speaker": "医生",
+      "role": "doctor",
+      "text": "您好，请坐。今天主要是哪里不舒服？",
+      "source_turn_ids": [
+        2
+      ],
+      "reason": "医生单方面说明"
+    }
+  ],
+  "other_turns": [
+    {
+      "turn_id": 1,
+      "line_no": "2",
+      "speaker": "护士",
+      "role": "other",
+      "text": "请患者先到分诊台测量血压。",
+      "source_turn_ids": [
+        1
+      ],
+      "reason": "其他角色发言"
+    }
+  ],
+  "parse_errors": [
+    {
+      "line_no": "1",
+      "text": "候诊区广播 请保持安静",
+      "reason": "未识别为“说话人：内容”格式"
+    }
+  ],
+  "empty_content": [
+    {
+      "line_no": "20",
+      "speaker": "医生",
+      "reason": "空内容"
+    }
+  ]
+}

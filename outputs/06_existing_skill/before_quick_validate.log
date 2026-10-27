@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\21336\tools\anthropic-skills\skills\skill-creator\scripts\quick_validate.py", line 101, in <module>
+    valid, message = validate_skill(sys.argv[1])
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\21336\tools\anthropic-skills\skills\skill-creator\scripts\quick_validate.py", line 22, in validate_skill
+    content = skill_md.read_text()
+  File "C:\Python314\Lib\pathlib\__init__.py", line 788, in read_text
+    return f.read()
+           ~~~~~~^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 61: illegal multibyte sequence

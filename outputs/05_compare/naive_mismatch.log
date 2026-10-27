@@ -1,0 +1,16 @@
+﻿Traceback (most recent call last):
+  File "C:\Users\21336\2024187025-牛晨杰-智能体实践实验一\outputs\05_compare\naive_de.py", line 40, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\21336\2024187025-牛晨杰-智能体实践实验一\outputs\05_compare\naive_de.py", line 27, in main
+    expr["mean_diff"] = expr[treat].mean(axis=1) - expr[control].mean(axis=1)
+                                                   ~~~~^^^^^^^^^
+  File "C:\Users\21336\2024187025-牛晨杰-智能体实践实验一\.venv\Lib\site-packages\pandas\core\frame.py", line 4336, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\21336\2024187025-牛晨杰-智能体实践实验一\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6557, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21336\2024187025-牛晨杰-智能体实践实验一\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6609, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Control_X'] not in index"
