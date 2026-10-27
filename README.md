@@ -89,6 +89,11 @@ python -m venv .venv
 - 实验要求的配置截图、成功响应截图需由使用者在本机补拍，清单见
   `docs/实验记录.md` 第九节。
 
+## 版本
+
+- 本地 Git 首次提交：`c86f7ff8a6e45a2bd570a2129ee1abf980935313`
+- 远端仓库：待推送后补充（见 `docs/实验记录.md` 第八节）
+
 ## 来源
 
 - Anthropic `skills` 仓库：https://github.com/anthropics/skills（提交 `dbd4588f9e1033efb41dad4bef2f7947c8993d44`）
