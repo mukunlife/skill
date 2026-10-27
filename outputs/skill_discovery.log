@@ -1,0 +1,22 @@
+﻿# Skill 识别测试（新会话）
+时间：2026-10-27
+命令：claude -p "列出当前会话可用的 skill 名称，只列名称，每行一个，不要调用任何工具。"
+
+## 输出
+
+de-analysis
+medical-dialogue
+skill-creator
+dataviz
+update-config
+keybindings-help
+code-review
+simplify
+fewer-permission-prompts
+loop
+claude-api
+workflow-authoring
+run
+plugin-authoring
+init
+security-review
