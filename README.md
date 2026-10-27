@@ -127,7 +127,7 @@ python -m venv .venv
 ## 版本
 
 - 本地 Git 首次提交：`c86f7ff8a6e45a2bd570a2129ee1abf980935313`
-- 真实数据版提交：`3882d1088293ff3e899f41afa5b2353e011de995`
+- 真实数据版提交：`ad51b77`
 - 远端仓库：`https://github.com/mukunlife/skill.git`（待推送，见 `docs/实验记录.md` 第八节）
 
 ## 来源
