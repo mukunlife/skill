@@ -9,8 +9,9 @@
 
 | 目录 | 内容 |
 |---|---|
-| `.claude/skills/de-analysis/` | 自建 Skill：两组基因表达差异分析（SKILL.md、references、scripts、examples） |
-| `.claude/skills/medical-dialogue/` | 自建 Skill：医疗对话整理为问答记录（SKILL.md、references、scripts、examples） |
+| `.claude/skills/de-analysis/` | 自建 Skill：两组基因表达差异分析（运行时目录） |
+| `.claude/skills/medical-dialogue/` | 自建 Skill：医疗对话整理为问答记录（运行时目录） |
+| `skills/` | 提交清单要求的两个自建 Skill 副本（内容与 `.claude/skills/` 一致） |
 | `.claude/skills/skill-creator/` | 安装并改造的现有 Skill（Apache 2.0，来源与改动见 `NOTICE.md`） |
 | `outputs/01_connection/` | DeepSeek 配置记录与实际请求核验 |
 | `outputs/02_file_ops/` | 文件创建、外部修改、回读记录 |
